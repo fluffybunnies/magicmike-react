@@ -4,6 +4,13 @@ body {
   font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
+.page {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+}
+
 .page-title {
 	padding: 1em 0 1.4em 0;
 	font-size: 25px;
@@ -14,10 +21,6 @@ body {
 .magic-mike {
 	margin: 0 auto;
 	width: 400px;
-  -webkit-animation: 0.5s fade-in;
-  -moz-animation: 0.5s fade-in;
-  -o-animation: 0.5s fade-in;
-  animation: 0.5s fade-in;
 }
 .mike {
 	display: block;
