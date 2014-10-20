@@ -1,0 +1,21 @@
+{
+	"name": "magicmike-angular",
+	"version": "0.0.0",
+	"description": "A Tribute",
+	"author": "Alec Hulce",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fluffybunnies/magicmike-react.git"
+	},
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "cool-ascii-faces": "1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
