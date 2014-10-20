@@ -2,6 +2,17 @@
  * @jsx React.DOM
  */
 
+var Page = React.createClass({
+	render: function(){
+		return (
+			<div className="page">
+				<div className="page-title">Express + React</div>
+				<MagicMike />
+			</div>
+		);
+	}
+});
+
 var MagicMike = React.createClass({
 	getInitialState: function(){
 		return {
@@ -44,9 +55,9 @@ var MagicMike = React.createClass({
 	}
 	,render: function(){
 		return (
-			<div className="magic-mike">
+			<div className="magic-mike" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
 				<SpeechBubble speech={this.state.speech} />
-				<img className="mike" src="img/mike.jpg" alt="" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave} />
+				<img className="mike" src="img/mike.jpg" alt="" />
 			</div>
 		);
 	}
@@ -69,6 +80,7 @@ var SpeechBubble = React.createClass({
 
 
 React.renderComponent(
-	<MagicMike />
+	<Page />
 	,document.getElementById('content')
 );
+
