@@ -32,8 +32,7 @@ var MagicMike = React.createClass({
 				,dataType: 'json'
 				,cache: false
 				,success: function(data){
-					console.log('GET', arguments);
-					setState(data);
+					setState(data.text);
 				}
 			});
 		}
